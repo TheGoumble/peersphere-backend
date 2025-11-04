@@ -11,7 +11,7 @@ Daphne Acher, Izze Lino, Vladimir Pierre, Javier Vargas, Bridjet Walker
 - Apache NetBeans
 -	MySQL Server 8.0 & MySQL Workbench 8.0
 
-#Set Up
+# Set Up
 1. Copy and paste this command in the command line to download the repo
 ```bash
 $ git clone https://github.com/TheGoumble/peersphere-backend.git
@@ -20,8 +20,15 @@ $ git clone https://github.com/TheGoumble/peersphere-backend.git
 
 3.	create the database on your machine
 -	open MySQL workbench, connect to LOCAL MySql.
--	at the top of the script, write: CREATE DATABASE peersphere_db; 
--	On the next line, write: USE peersphere_db;.
+-	at the top of the script, write:
+```bash
+$ CREATE DATABASE peersphere_db;
+``` 
+
+-	On the next line, write:
+```bash
+$  USE peersphere_db;
+``` 
 -	Below that, paste the code from the sql script that already is on the github repo. make sure you hit the refresh arrow icon in the schemas pane after running this script or else the tables wont show up
 -	IMPORTANT: the app will connect to your local MySQL instance (localhost:3306). meaning, the data individually lives on each of our computers, NOT the cloud (yet).
 
